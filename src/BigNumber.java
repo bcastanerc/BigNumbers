@@ -47,6 +47,7 @@ public class BigNumber {
         BigNumber mcd(BigNumber other) {
             return null;
         }
+        //test 1
 
         // Compara dos BigNumber. Torna 0 si són iguals, -1
         // si el primer és menor i torna 1 si el segon és menor

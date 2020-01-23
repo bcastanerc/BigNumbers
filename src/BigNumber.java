@@ -1,13 +1,14 @@
 public class BigNumber {
 
-    public static void main(String[] args) {
+    private String numeroString;
 
-      BigNumber b1 = new BigNumber("123456");
-      BigNumber b2 = new BigNumber("1234");
-
+    public String getNumeroString() {
+        return numeroString;
     }
 
-    private String numeroString;
+    public void setNumeroString(String numeroString) {
+        this.numeroString = numeroString;
+    }
 
     // Constructor 1
     public BigNumber(String s) {
@@ -74,26 +75,33 @@ public class BigNumber {
     public boolean equals(Object other) {
         if (other instanceof BigNumber){
 
+            BigNumber numeroOther = (BigNumber) other;
+            int numDiferencia = 0;
+
             if (this == other) return true;
 
-            if (((BigNumber) other).numeroString.length() != this.numeroString.length()) {
-                if (((BigNumber) other).numeroString.length() > this.numeroString.length()) {
-                    for (int i = this.numeroString.length(); i <= ((BigNumber) other).numeroString.length(); i++) {
-                        this.numeroString = "0" + this.numeroString;
+            if (numeroOther.numeroString.length() != this.numeroString.length()) {
+                if (numeroOther.numeroString.length() > this.numeroString.length()) {
+                    numDiferencia = numeroOther.numeroString.length() - this.numeroString.length();
+                    this.addZero(numDiferencia);
                     }
                 } else {
-                    for (int i = ((BigNumber) other).numeroString.length(); i <= this.numeroString.length(); i++) {
-                        ((BigNumber) other).numeroString = "0" + ((BigNumber) other).numeroString;
-                    }
+                   numDiferencia = this.numeroString.length() - numeroOther.numeroString.length() ;
+                   numeroOther.addZero(numDiferencia);
                 }
                 for (int i = 1; i <= this.numeroString.length(); i++) {
-                    if (this.numeroString.charAt(i) != ((BigNumber) other).numeroString.charAt(i) ) return false;
+                    if (this.numeroString.charAt(i) != numeroOther.numeroString.charAt(i) ) return false;
                 }
-            }
             return true;
         }
-
         return false;
+    }
+
+    public void addZero(int totalZeros){
+
+        for (int i = totalZeros; i > 0 ; i--) {
+            this.numeroString = "0" + this.numeroString;
+        }
     }
 
     public void sameLenght(BigNumber b){
@@ -133,4 +141,13 @@ public class BigNumber {
         return numeroString;
     }
 
+
+
+    /*
+    * Main para pruebas personales
+    * */
+    public static void main(String[] args) {
+
+
+    }
 }

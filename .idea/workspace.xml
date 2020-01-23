@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d173eb2b-701a-45d1-b70e-0ed7eb2dafad" name="Default Changelist" comment="Commit">
+    <list default="true" id="d173eb2b-701a-45d1-b70e-0ed7eb2dafad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BigNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BigNumber.java" afterDir="false" />
     </list>
@@ -106,43 +106,55 @@
       <option name="project" value="LOCAL" />
       <updated>1579709861511</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit Se ha creado el metodo RemoveZeroLeftSide para eliminar los los Zero de la izquierda en los numeros, se esta  desarrollando el metodo sameLenght y esta casi acabado el metodo equals, queda probar los tests.">
+      <created>1579738972319</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579738972319</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit 1" />
     <MESSAGE value="Commit 1.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Commit Se ha creado el metodo RemoveZeroLeftSide para eliminar los los Zero de la izquierda en los numeros, se esta  desarrollando el metodo sameLenght y esta casi acabado el metodo equals, queda probar los tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Se ha creado el metodo RemoveZeroLeftSide para eliminar los los Zero de la izquierda en los numeros, se esta  desarrollando el metodo sameLenght y esta casi acabado el metodo equals, queda probar los tests." />
   </component>
   <component name="WindowStateProjectService">
     <state x="709" y="356" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1579708182433">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="709" y="356" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579708182433" />
-    <state x="105" y="138" key="CommitChangelistDialog2" timestamp="1579738926722">
+    <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser" timestamp="1579790893660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="105" y="138" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579738926722" />
+    <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579790893660" />
+    <state x="105" y="138" key="CommitChangelistDialog2" timestamp="1579823619876">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="105" y="138" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579823619876" />
     <state x="831" y="413" width="260" height="214" key="Github.ShareDialog" timestamp="1579709758173">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="831" y="413" width="260" height="214" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579709758173" />
-    <state width="914" height="281" key="GridCell.Tab.0.bottom" timestamp="1579736925816">
+    <state width="914" height="281" key="GridCell.Tab.0.bottom" timestamp="1579739045658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579736925816" />
-    <state width="914" height="281" key="GridCell.Tab.0.center" timestamp="1579736925816">
+    <state width="914" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579739045658" />
+    <state width="914" height="281" key="GridCell.Tab.0.center" timestamp="1579739045658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579736925816" />
-    <state width="914" height="281" key="GridCell.Tab.0.left" timestamp="1579736925816">
+    <state width="914" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579739045658" />
+    <state width="914" height="281" key="GridCell.Tab.0.left" timestamp="1579739045658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579736925816" />
-    <state width="914" height="281" key="GridCell.Tab.0.right" timestamp="1579736925816">
+    <state width="914" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579739045658" />
+    <state width="914" height="281" key="GridCell.Tab.0.right" timestamp="1579739045658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579736925816" />
+    <state width="914" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579739045658" />
     <state x="682" y="124" key="RollbackChangesDialog" timestamp="1579709983804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -151,10 +163,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579708218729" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1579709906657">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1579738980264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579709906657" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579738980264" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1579821733914">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579821733914" />
     <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1579705766595">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -163,13 +179,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579709789229" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1579711371682">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1579822196783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579711371682" />
-    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1579712821859">
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579822196783" />
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1579790738209">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579712821859" />
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579790738209" />
   </component>
 </project>

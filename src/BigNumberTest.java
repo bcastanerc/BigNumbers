@@ -1,6 +1,6 @@
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class BigNumberTest {
 
@@ -40,11 +40,6 @@ public class BigNumberTest {
         b2 = new BigNumber("556456345734563456345634556783678567856783456345634563456567456745674561");
         assertEquals(-1, b1.compareTo(b2));
 
-        b1 = new BigNumber("3");
-        b2 = new BigNumber("14");
-        assertEquals(-1, b1.compareTo(b2));
-        assertEquals(1, b2.compareTo(b1));
-
         b1 = new BigNumber("35");
         b2 = new BigNumber("35");
         assertEquals(0, b2.compareTo(b1));
@@ -63,6 +58,11 @@ public class BigNumberTest {
         b2 = new BigNumber("135467845634556778909546345234534534512332");
         assertEquals(1, b1.compareTo(b2));
         assertEquals(-1, b2.compareTo(b1));
+
+        b1 = new BigNumber("3");
+        b2 = new BigNumber("14");
+        assertEquals(-1, b1.compareTo(b2));
+        assertEquals(1, b2.compareTo(b1));
     }
 
     @Test

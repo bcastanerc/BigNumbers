@@ -4,6 +4,7 @@
     <list default="true" id="d173eb2b-701a-45d1-b70e-0ed7eb2dafad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BigNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BigNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BigNumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BigNumberTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +38,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RunManager" selected="Application.JavaClassTesting">
+  <component name="RunManager" selected="JUnit.BigNumberTest.comparacions">
+    <configuration name="BigNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BigNumber" />
+      <module name="BigNumbers" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JavaClassTesting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JavaClassTesting" />
       <module name="BigNumbers" />
@@ -57,8 +65,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JavaClassTesting" />
         <item itemvalue="JUnit.BigNumberTest.comparacions" />
+        <item itemvalue="Application.BigNumber" />
+        <item itemvalue="Application.JavaClassTesting" />
       </list>
     </recent_temporary>
   </component>
@@ -113,14 +122,22 @@
       <option name="project" value="LOCAL" />
       <updated>1579738972319</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Se han realizado mejoras en el metodo equals y se ha añadido una función para añadir 0 a la izquierda">
+      <created>1579823631567</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579823631567</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit 1" />
     <MESSAGE value="Commit 1.2" />
     <MESSAGE value="Commit Se ha creado el metodo RemoveZeroLeftSide para eliminar los los Zero de la izquierda en los numeros, se esta  desarrollando el metodo sameLenght y esta casi acabado el metodo equals, queda probar los tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit Se ha creado el metodo RemoveZeroLeftSide para eliminar los los Zero de la izquierda en los numeros, se esta  desarrollando el metodo sameLenght y esta casi acabado el metodo equals, queda probar los tests." />
+    <MESSAGE value="Se han realizado mejoras en el metodo equals y se ha añadido una función para añadir 0 a la izquierda" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se han realizado mejoras en el metodo equals y se ha añadido una función para añadir 0 a la izquierda" />
   </component>
   <component name="WindowStateProjectService">
     <state x="709" y="356" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1579708182433">
@@ -131,30 +148,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579790893660" />
-    <state x="105" y="138" key="CommitChangelistDialog2" timestamp="1579823619876">
+    <state x="105" y="138" key="CommitChangelistDialog2" timestamp="1579823630780">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="105" y="138" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579823619876" />
+    <state x="105" y="138" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579823630780" />
     <state x="831" y="413" width="260" height="214" key="Github.ShareDialog" timestamp="1579709758173">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="831" y="413" width="260" height="214" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579709758173" />
-    <state width="914" height="281" key="GridCell.Tab.0.bottom" timestamp="1579739045658">
+    <state width="916" height="283" key="GridCell.Tab.0.bottom" timestamp="1579890410348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579739045658" />
-    <state width="914" height="281" key="GridCell.Tab.0.center" timestamp="1579739045658">
+    <state width="916" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579890410348" />
+    <state width="916" height="283" key="GridCell.Tab.0.center" timestamp="1579890410348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579739045658" />
-    <state width="914" height="281" key="GridCell.Tab.0.left" timestamp="1579739045658">
+    <state width="916" height="283" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579890410348" />
+    <state width="916" height="283" key="GridCell.Tab.0.left" timestamp="1579890410348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579739045658" />
-    <state width="914" height="281" key="GridCell.Tab.0.right" timestamp="1579739045658">
+    <state width="916" height="283" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579890410348" />
+    <state width="916" height="283" key="GridCell.Tab.0.right" timestamp="1579890410348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579739045658" />
+    <state width="916" height="283" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579890410348" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1579872894752">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579872894752" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1579872894752">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579872894752" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1579872894752">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579872894752" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1579872894752">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579872894752" />
     <state x="682" y="124" key="RollbackChangesDialog" timestamp="1579709983804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -163,14 +196,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579708218729" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1579738980264">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1579823634736">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579738980264" />
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1579821733914">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579823634736" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1579883032171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579821733914" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579883032171" />
     <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1579705766595">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

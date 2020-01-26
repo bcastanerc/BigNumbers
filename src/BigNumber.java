@@ -22,7 +22,27 @@ public class BigNumber {
 
     // Suma
     BigNumber add(BigNumber other) {
-        return null;
+        this.addZero(other);
+        this.numeroString = 0 + this.numeroString;
+        other.numeroString = 0 + other.numeroString;
+        System.out.println(this.numeroString);
+        System.out.println(other.numeroString);
+        int acarreo = 0;
+        int numActual = 0;
+        String resultado = "";
+        for (int i = this.numeroString.length()-1; i >= 0 ; i--) {
+            numActual = ((this.numeroString.charAt(i) -48) + (acarreo) + (other.numeroString.charAt(i)-48));
+            if (acarreo == 1) acarreo = 0;
+            if (numActual >= 10){
+                numActual = numActual-10;
+                resultado = numActual + resultado;
+                acarreo = 1;
+            }
+            resultado = numActual + resultado;
+        }
+        removeZero(resultado);
+        System.out.println(resultado);
+        return new BigNumber(resultado);
     }
 
     // Resta
@@ -85,30 +105,29 @@ public class BigNumber {
 
     // Mira si dos objectes BigNumber són iguals
     public boolean equals(Object other) {
-
         if (this == other) return true;
         if (other instanceof BigNumber){
-            BigNumber numeroOther = (BigNumber) other;
-            int numDiferencia = 0;
-
-            if (numeroOther.numeroString.length() != this.numeroString.length()) {
-                if (numeroOther.numeroString.length() > this.numeroString.length()) {
-                    numDiferencia = numeroOther.numeroString.length() - this.numeroString.length();
-                    this.addZero(numDiferencia);
-                    }
-                } else {
-                   numDiferencia = this.numeroString.length() - numeroOther.numeroString.length() ;
-                   numeroOther.addZero(numDiferencia);
-                }
-            return this.numeroString.equals(numeroOther.numeroString);
+            addZero(other);
+            return this.numeroString.equals(((BigNumber) other).numeroString);
         }
         return false;
     }
 
-    public void addZero(int totalZeros){
-
-        for (int i = totalZeros; i > 0 ; i--) {
-            this.numeroString = "0" + this.numeroString;
+    public void addZero(Object otherObject){
+        BigNumber other = (BigNumber) otherObject;
+        int numDiferencia = 0;
+        if (other.numeroString.length() != this.numeroString.length()) {
+            if (other.numeroString.length() > this.numeroString.length()) {
+                numDiferencia = other.numeroString.length() - this.numeroString.length();
+                for (int i = numDiferencia; i > 0 ; i--) {
+                    this.numeroString = "0" + this.numeroString;
+                }
+            }
+        } else {
+            numDiferencia = this.numeroString.length() - other.numeroString.length() ;
+            for (int i = numDiferencia; i > 0 ; i--) {
+                other.numeroString = "0" + other.numeroString;
+            }
         }
     }
 
@@ -118,7 +137,6 @@ public class BigNumber {
         // Contamos el total de 0 que hay
         int i = 0;
         while (i < str.length() && str.charAt(i) == '0') i++;
-
         StringBuilder sb = new StringBuilder(str);
         sb.replace(0, i, "");
         return sb.toString();
@@ -152,5 +170,11 @@ public class BigNumber {
 
         String numero = b3.removeZero(b3.numeroString);
         System.out.println(numero);
+
+        System.out.println(b3.numeroString.charAt(1));
+        System.out.println(b3.numeroString.charAt(2));
+
+        System.out.println(b3.numeroString.charAt(1) + b3.numeroString.charAt(2));
+        System.out.println(b2.add(b3));
     }
 }

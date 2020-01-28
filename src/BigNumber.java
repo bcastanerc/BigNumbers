@@ -99,33 +99,11 @@ public class BigNumber {
                 sumaActual.numeroString = numActual + sumaActual.numeroString;
             }
             for (int j = cerosDerecha; j > 0; j--) sumaActual.numeroString += "0";
-
             if (acarreo > 0) sumaActual.numeroString = acarreo + sumaActual.numeroString;
-
             cerosDerecha++;
             resultado = resultado.add(sumaActual);
         }
         return resultado;
-
-        /*
-        other.numeroString =  other.removeZero(other.numeroString);
-       this.numeroString =  this.removeZero(this.numeroString);
-
-        System.out.println(this.numeroString);
-        System.out.println(other.numeroString);
-        BigNumber resultado = new BigNumber(this.numeroString);
-        BigNumber resultadoFinal = new BigNumber("");
-        int cerosDerecha = -1;
-        for (int i = other.numeroString.length()-1; i > 0 ; i--) {
-            cerosDerecha++;
-            int vecesMult = other.numeroString.charAt(1) -48;
-            for (int j = vecesMult; j < 0; j--) {
-                resultado = this.add(resultado);
-            }
-            resultado.numeroString += cerosDerecha;
-            resultadoFinal = resultadoFinal.add(resultado);
-        }*/
-       // return  resultadoFinal;
     }
 
     // Divideix
@@ -141,21 +119,35 @@ public class BigNumber {
     // Potència
     BigNumber power(int n) {
 
-        for (int i = 1; i < n ; i++) {
-            mult(this);
-        }
-
         return null;
     }
 
     // Factorial
     BigNumber factorial() {
-        return null;
+
+        BigNumber contador = new BigNumber("1");
+        BigNumber resultado = new BigNumber("1");
+        BigNumber numActual = new BigNumber("1");
+        while (numActual.compareTo(new BigNumber(this.numeroString)) != 0){
+            numActual = (numActual.add(contador));
+            resultado =numActual.mult(resultado);
+        }
+
+        return resultado;
     }
 
     // MCD. Torna el Màxim comú divisor
     BigNumber mcd(BigNumber other) {
-        return null;
+
+        BigNumber num = new BigNumber(this.numeroString);
+        while(num.compareTo(other) != 0) {
+            if (this.compareTo(other) == 1) {
+                num = num.sub(other);
+            } else {
+               other = other.sub(num);
+            }
+        }
+        return num;
     }
 
     // Compara dos BigNumber. Torna 0 si són iguals, -1

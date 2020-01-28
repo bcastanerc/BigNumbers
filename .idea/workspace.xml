@@ -4,7 +4,6 @@
     <list default="true" id="d173eb2b-701a-45d1-b70e-0ed7eb2dafad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BigNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BigNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BigNumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BigNumberTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +37,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RunManager" selected="JUnit.BigNumberTest">
+  <component name="RunManager" selected="JUnit.BigNumberTest.potencies">
     <configuration name="BigNumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BigNumbers" />
       <option name="PACKAGE_NAME" value="" />
@@ -68,6 +67,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BigNumberTest.potencies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BigNumbers" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BigNumberTest" />
+      <option name="METHOD_NAME" value="potencies" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BigNumberTest.restes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BigNumbers" />
       <option name="PACKAGE_NAME" value="" />
@@ -78,23 +87,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BigNumberTest.sumes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BigNumbers" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BigNumberTest" />
-      <option name="METHOD_NAME" value="sumes" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BigNumberTest.potencies" />
         <item itemvalue="JUnit.BigNumberTest" />
         <item itemvalue="JUnit.BigNumberTest.mcd" />
         <item itemvalue="JUnit.BigNumberTest.factorials" />
         <item itemvalue="JUnit.BigNumberTest.restes" />
-        <item itemvalue="JUnit.BigNumberTest.sumes" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580151946028</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Se ha acabado el factorial y el MCD">
+      <created>1580237994023</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1580237994023</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -188,7 +194,8 @@
     <MESSAGE value="Funciión equals y compareTo han sido terminadas y pasan los test actualmente (Pendiente de mejoras y optimización en el código)." />
     <MESSAGE value="Se han optimizado las funciones, la suma pasa la mitad de los test, da error en los que se acarrea 1" />
     <MESSAGE value="Se ha terminado la suma, la resta y la multiplicación" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se ha terminado la suma, la resta y la multiplicación" />
+    <MESSAGE value="Se ha acabado el factorial y el MCD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se ha acabado el factorial y el MCD" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -200,30 +207,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579790893660" />
-    <state x="105" y="138" key="CommitChangelistDialog2" timestamp="1580151945245">
+    <state x="105" y="138" key="CommitChangelistDialog2" timestamp="1580237993367">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="105" y="138" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580151945245" />
+    <state x="105" y="138" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580237993367" />
     <state x="831" y="413" width="260" height="214" key="Github.ShareDialog" timestamp="1579709758173">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="831" y="413" width="260" height="214" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579709758173" />
-    <state width="914" height="279" key="GridCell.Tab.0.bottom" timestamp="1580237882651">
+    <state width="914" height="279" key="GridCell.Tab.0.bottom" timestamp="1580238413213">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580237882651" />
-    <state width="914" height="279" key="GridCell.Tab.0.center" timestamp="1580237882650">
+    <state width="914" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580238413213" />
+    <state width="914" height="279" key="GridCell.Tab.0.center" timestamp="1580238413213">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580237882650" />
-    <state width="914" height="279" key="GridCell.Tab.0.left" timestamp="1580237882650">
+    <state width="914" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580238413213" />
+    <state width="914" height="279" key="GridCell.Tab.0.left" timestamp="1580238413213">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580237882650" />
-    <state width="914" height="279" key="GridCell.Tab.0.right" timestamp="1580237882651">
+    <state width="914" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580238413213" />
+    <state width="914" height="279" key="GridCell.Tab.0.right" timestamp="1580238413213">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580237882651" />
+    <state width="914" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580238413213" />
     <state width="914" height="347" key="GridCell.Tab.1.bottom" timestamp="1580236776069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -248,10 +255,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579708218729" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1580151955627">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1580237999821">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580151955627" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580237999821" />
     <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1580223434233">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -119,7 +119,11 @@ public class BigNumber {
     // Potència
     BigNumber power(int n) {
 
-        return null;
+        BigNumber resultado= new BigNumber(this.numeroString);
+        for (int i = n; i >1 ; i--) {
+            resultado = this.mult(resultado);
+        }
+        return resultado;
     }
 
     // Factorial

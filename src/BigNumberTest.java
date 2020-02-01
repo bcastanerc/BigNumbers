@@ -220,17 +220,9 @@ public class BigNumberTest {
     public void divisions() {
         BigNumber b1, b2;
 
-        b1 = new BigNumber("45354645634563456345456345234545897894562634563456");
-        b2 = new BigNumber("45634563456345634563456546799008905634563456456");
-        assertEquals(new BigNumber("993"), b1.div(b2));
-
-        b1 = new BigNumber("2134345456123486126462457864246456434312345");
-        b2 = new BigNumber("4534564545645644564564567861534978978512");
-        assertEquals(new BigNumber("470"), b1.div(b2));
-
-        b1 = new BigNumber("12345645634563456345656767878967894");
-        b2 = new BigNumber("22");
-        assertEquals(new BigNumber("561165710661975288438943994498540"), b1.div(b2));
+        b1 = new BigNumber("10");
+        b2 = new BigNumber("");
+        assertEquals((null), b1.div(b2));
 
         b1 = new BigNumber("10");
         b2 = new BigNumber("5");
@@ -255,6 +247,23 @@ public class BigNumberTest {
         b1 = new BigNumber("56734564576346234567567834534565675674567");
         b2 = new BigNumber("9999999999999999463499999999999999999");
         assertEquals(new BigNumber("5673"), b1.div(b2));
+
+        b1 = new BigNumber("45354645634563456345456345234545897894562634563456");
+        b2 = new BigNumber("45634563456345634563456546799008905634563456456");
+        assertEquals(new BigNumber("993"), b1.div(b2));
+
+        b1 = new BigNumber("2134345456123486126462457864246456434312345");
+        b2 = new BigNumber("4534564545645644564564567861534978978512");
+        assertEquals(new BigNumber("470"), b1.div(b2));
+
+        b1 = new BigNumber("12345645634563456345656767878967894");
+        b2 = new BigNumber("22");
+        assertEquals(new BigNumber("561165710661975288438943994498540"), b1.div(b2));
+
+
+        b1 = new BigNumber("12345645634563456345656767879876543456789098765434567898765433456789876543234567898765432345678765432345678765432345678967894");
+        b2 = new BigNumber("303");
+        assertEquals(new BigNumber("40744705064565862526920026006193212728676893615295603626288559263332925885262600325958522592999225849325672493176058346428"), b1.div(b2));
     }
 
     @Test
@@ -283,6 +292,12 @@ public class BigNumberTest {
     @Test
     public void potencies() {
         BigNumber b1;
+
+        b1 = new BigNumber("5");
+        assertEquals(new BigNumber("1"), b1.power(0));
+
+        b1 = new BigNumber("5");
+        assertEquals(new BigNumber("5"), b1.power(1));
 
         b1 = new BigNumber("5");
         assertEquals(new BigNumber("25"), b1.power(2));
@@ -334,6 +349,6 @@ public class BigNumberTest {
 
         b1 = new BigNumber("2454563453452346787893523445675534535656678678356");
         b2 = new BigNumber("5");
-        //assertEquals(new BigNumber("4"), b1.mcd(b2));
+        //assertEquals(new BigNumber("1"), b1.mcd(b2));
     }
 }

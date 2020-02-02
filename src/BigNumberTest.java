@@ -273,6 +273,9 @@ public class BigNumberTest {
         b1 = new BigNumber("9");
         assertEquals(new BigNumber("3"), b1.sqrt());
 
+        b1 = new BigNumber("7584");
+        assertEquals(new BigNumber("87"), b1.sqrt());
+
         b1 = new BigNumber("101");
         assertEquals(new BigNumber("10"), b1.sqrt());
 
@@ -349,6 +352,6 @@ public class BigNumberTest {
 
         b1 = new BigNumber("2454563453452346787893523445675534535656678678356");
         b2 = new BigNumber("5");
-        //assertEquals(new BigNumber("1"), b1.mcd(b2));
+       // assertEquals(new BigNumber("1"), b1.mcd(b2));
     }
 }

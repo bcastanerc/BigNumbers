@@ -38,7 +38,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RunManager" selected="JUnit.BigNumberTest.arrels">
+  <component name="RunManager" selected="JUnit.BigNumberTest">
     <configuration name="BigNumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BigNumbers" />
       <option name="PACKAGE_NAME" value="" />
@@ -89,10 +89,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BigNumberTest" />
         <item itemvalue="JUnit.BigNumberTest.arrels" />
         <item itemvalue="JUnit.Testeo" />
         <item itemvalue="JUnit.BigNumberTest.mcd" />
-        <item itemvalue="JUnit.BigNumberTest" />
         <item itemvalue="JUnit.BigNumberTest.factorials" />
       </list>
     </recent_temporary>
@@ -204,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580680540915</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="La unica función que no va correctamente es MCD y es debido a que la resta esta mal optimizada, me he dado cuenta tarde. Esta comentado el codigo de MCD con la formula de euclides y la funcion divMcd para esta implementación.">
+      <created>1580694196200</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1580694196200</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -220,7 +227,8 @@
     <MESSAGE value="Diviaión terminada" />
     <MESSAGE value="Acabar la raiz y perfecionar el MCD." />
     <MESSAGE value="La raiz falla en algunos test y el mcd no esta suficientemente optimizado para pasar el ultimo test." />
-    <option name="LAST_COMMIT_MESSAGE" value="La raiz falla en algunos test y el mcd no esta suficientemente optimizado para pasar el ultimo test." />
+    <MESSAGE value="La unica función que no va correctamente es MCD y es debido a que la resta esta mal optimizada, me he dado cuenta tarde. Esta comentado el codigo de MCD con la formula de euclides y la funcion divMcd para esta implementación." />
+    <option name="LAST_COMMIT_MESSAGE" value="La unica función que no va correctamente es MCD y es debido a que la resta esta mal optimizada, me he dado cuenta tarde. Esta comentado el codigo de MCD con la formula de euclides y la funcion divMcd para esta implementación." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -232,30 +240,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579790893660" />
-    <state x="105" y="138" key="CommitChangelistDialog2" timestamp="1580680540325">
+    <state x="105" y="138" key="CommitChangelistDialog2" timestamp="1580694195535">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="105" y="138" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580680540325" />
+    <state x="105" y="138" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580694195535" />
     <state x="831" y="413" width="260" height="214" key="Github.ShareDialog" timestamp="1579709758173">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="831" y="413" width="260" height="214" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579709758173" />
-    <state width="1877" height="147" key="GridCell.Tab.0.bottom" timestamp="1580693209560">
+    <state width="1877" height="546" key="GridCell.Tab.0.bottom" timestamp="1580696247542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="147" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580693209560" />
-    <state width="1877" height="147" key="GridCell.Tab.0.center" timestamp="1580693209560">
+    <state width="1877" height="546" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580696247542" />
+    <state width="1877" height="546" key="GridCell.Tab.0.center" timestamp="1580696247542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="147" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580693209560" />
-    <state width="1877" height="147" key="GridCell.Tab.0.left" timestamp="1580693209560">
+    <state width="1877" height="546" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580696247542" />
+    <state width="1877" height="546" key="GridCell.Tab.0.left" timestamp="1580696247542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="147" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580693209560" />
-    <state width="1877" height="147" key="GridCell.Tab.0.right" timestamp="1580693209560">
+    <state width="1877" height="546" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580696247542" />
+    <state width="1877" height="546" key="GridCell.Tab.0.right" timestamp="1580696247542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="147" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580693209560" />
+    <state width="1877" height="546" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580696247542" />
     <state width="1877" height="238" key="GridCell.Tab.1.bottom" timestamp="1580693038027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -280,10 +288,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579708218729" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1580680545397">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1580694199568">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580680545397" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580694199568" />
     <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1580548705867">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

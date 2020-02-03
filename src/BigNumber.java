@@ -60,7 +60,7 @@ public class BigNumber {
         int acarreo = 0;
         int numActual;
 
-        // Si this es inferior a other se cambian this por other.
+        /* Si this es inferior a other se cambian this por other */
         if (this.compareTo(other) == -1) {
             String temp = other.numeroString;
             other.numeroString = this.numeroString;
@@ -117,7 +117,7 @@ public class BigNumber {
                 int numActual = ((this.numeroString.charAt(i)-48) * (other.numeroString.charAt(j) -48) + acarreo);
                 acarreo = 0;
 
-                /*Si numActual es mayor que 10 hay que restarle 10 y añadir 1 al acarreo */
+                /* Si numActual es mayor que 10 hay que restarle 10 y añadir 1 al acarreo */
                 if (numActual > 9) {
                     acarreo = numActual / 10;
                     numActual = numActual % 10;
@@ -160,10 +160,14 @@ public class BigNumber {
     }
 
     /**
-     * Esta función es la encargada de
-     * @return
+     * Esta función es la encargada de calcular la raiz cuadrada de un BigNumber para esto tendremos que dividir el BigNumber
+     * crear un array para almacenarlo y luego hacer las operaciones debidas.
+     * @return devuelve un Objeto de tipo BigNumber con la raiz cuadrada
      */
     BigNumber sqrt() {
+
+        if (!validBigNumber(this)) return null;
+
 
         BigNumber resto = new BigNumber("");
         BigNumber resultado = new BigNumber("");
@@ -189,13 +193,13 @@ public class BigNumber {
 
                 StringBuilder sb = new StringBuilder();
                 sb = new StringBuilder(new BigNumber(resultado).mult(new BigNumber("2")).toString());
-                sb = sb.append(j + 1);
+                sb.append(j + 1);
                 actual = new BigNumber(sb.toString());
 
                 if (actual.mult(new BigNumber(Integer.toString(j+1))).compareTo(resto) == 1  ){
 
                     sb = new StringBuilder(new BigNumber(resultado).mult(new BigNumber("2")).toString());
-                    sb = sb.append(j);
+                    sb.append(j);
                     actual = new BigNumber(sb.toString());
                     actual = actual.mult(new BigNumber(Integer.toString(j)));
                     resto = resto.sub(actual);

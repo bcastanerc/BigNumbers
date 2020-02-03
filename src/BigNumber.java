@@ -247,26 +247,13 @@ public class BigNumber {
     }
 
     /**
-     * Esta funcion sé encarga de calcular el mcd de dos BigNumbers, el metodo que you uso no es muy eficiente ya que usa la resta
-     * @param other objeto de tipo BigNumber con el cual haremos las comparaciones, a parte de this.
+     * Para calcular el mcd usamos la division ya que con el resto de esta e intencaviando los valores podemos calcular el mcd.
+     * @param other objeto de tipo BigNumber con el cual haremos las operaciones, a parte de this.
      * @return devuelve un BigNumber con el resultado.
      */
     BigNumber mcd(BigNumber other) {
 
         if (!this.validBigNumber(other)) return null;
-
-        BigNumber num = new BigNumber(this.numeroString);
-        while(num.compareTo(other) != 0) {
-            if (this.compareTo(other) == 1) {
-                num = num.sub(other);
-            } else {
-                other = other.sub(num);
-            }
-        }
-        return num;
-
-        /*
-        Intento de optimización junto a la función divMcd.
 
         if (this.compareTo(other) == -1) {
             String temp = other.numeroString;
@@ -274,37 +261,24 @@ public class BigNumber {
             this.numeroString = temp;
         }
 
-        BigNumber this2 = new BigNumber(this.numeroString);
-        while(this2.divMcd(other).compareTo(new BigNumber("0")) != 0){
-            this2 = other;
-            other = this2.divMcd(other);
-        }
-        return other;
-         */
+        BigNumber cero = new BigNumber("0");
+
+        if (this.equals(cero)) return other;
+        if (other.equals(cero)) return this;
+
+        return other.mcd(calculateRemainder(other));
     }
 
-    /*
-    public BigNumber divMcd(BigNumber other){
-
-        if (!this.validBigNumber(other)) return null;
-
-        BigNumber result = new BigNumber("");
-        BigNumber actual = new BigNumber("");
-        for (int i = 0; i < this.numeroString.length(); i++) {
-            actual.numeroString += this.numeroString.charAt(i);
-            int contador = 0;
-
-            Restamos a actual el divisor
-
-            while(actual.compareTo(other) != -1){
-                actual = actual.sub(other);
-                contador++;
-            }
-            result.numeroString += contador;
-        }
-        return actual;
+    /**
+     * Esta funcion calcula el resto de una division, esta nos sirve de apoyo para calcular el mcd.
+     * @param other objeto de tipo BigNumber con el cual haremos las operaciones, a parte de this.
+     * @return devuelve un BigNumber con el resto.
+     */
+    public BigNumber calculateRemainder(BigNumber other){
+        /* Multiplicamos el coeficiente por el divisor y luego se lo restamos al dividendo, así obtenemos el resto */
+        return this.sub(this.div(other).mult(other));
     }
-    */
+
 
     /**
      * Esta función compara dos BigNumber para averiguar cual es el mayor de los dos o si son iguales.

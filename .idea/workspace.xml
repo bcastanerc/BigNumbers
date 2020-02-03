@@ -38,14 +38,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RunManager" selected="JUnit.BigNumberTest.factorials">
-    <configuration name="BigNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BigNumber" />
-      <module name="BigNumbers" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.BigNumberTest.arrels">
     <configuration name="BigNumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BigNumbers" />
       <option name="PACKAGE_NAME" value="" />
@@ -85,13 +78,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Testeo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BigNumbers" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Testeo" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BigNumberTest.factorials" />
-        <item itemvalue="JUnit.BigNumberTest" />
-        <item itemvalue="JUnit.BigNumberTest.mcd" />
-        <item itemvalue="Application.BigNumber" />
         <item itemvalue="JUnit.BigNumberTest.arrels" />
+        <item itemvalue="JUnit.Testeo" />
+        <item itemvalue="JUnit.BigNumberTest.mcd" />
+        <item itemvalue="JUnit.BigNumberTest" />
+        <item itemvalue="JUnit.BigNumberTest.factorials" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580578236946</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="La raiz falla en algunos test y el mcd no esta suficientemente optimizado para pasar el ultimo test.">
+      <created>1580680540915</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1580680540915</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -210,7 +219,8 @@
     <MESSAGE value="Potencia terminado." />
     <MESSAGE value="Diviaión terminada" />
     <MESSAGE value="Acabar la raiz y perfecionar el MCD." />
-    <option name="LAST_COMMIT_MESSAGE" value="Acabar la raiz y perfecionar el MCD." />
+    <MESSAGE value="La raiz falla en algunos test y el mcd no esta suficientemente optimizado para pasar el ultimo test." />
+    <option name="LAST_COMMIT_MESSAGE" value="La raiz falla en algunos test y el mcd no esta suficientemente optimizado para pasar el ultimo test." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -222,46 +232,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579790893660" />
-    <state x="105" y="138" key="CommitChangelistDialog2" timestamp="1580578236282">
+    <state x="105" y="138" key="CommitChangelistDialog2" timestamp="1580680540325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="105" y="138" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580578236282" />
+    <state x="105" y="138" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580680540325" />
     <state x="831" y="413" width="260" height="214" key="Github.ShareDialog" timestamp="1579709758173">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="831" y="413" width="260" height="214" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579709758173" />
-    <state width="916" height="349" key="GridCell.Tab.0.bottom" timestamp="1580680043819">
+    <state width="1877" height="147" key="GridCell.Tab.0.bottom" timestamp="1580693209560">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="349" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580680043819" />
-    <state width="916" height="349" key="GridCell.Tab.0.center" timestamp="1580680043819">
+    <state width="1877" height="147" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580693209560" />
+    <state width="1877" height="147" key="GridCell.Tab.0.center" timestamp="1580693209560">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="349" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580680043819" />
-    <state width="916" height="349" key="GridCell.Tab.0.left" timestamp="1580680043819">
+    <state width="1877" height="147" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580693209560" />
+    <state width="1877" height="147" key="GridCell.Tab.0.left" timestamp="1580693209560">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="349" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580680043819" />
-    <state width="916" height="349" key="GridCell.Tab.0.right" timestamp="1580680043819">
+    <state width="1877" height="147" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580693209560" />
+    <state width="1877" height="147" key="GridCell.Tab.0.right" timestamp="1580693209560">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="349" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580680043819" />
-    <state width="916" height="349" key="GridCell.Tab.1.bottom" timestamp="1580680043819">
+    <state width="1877" height="147" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580693209560" />
+    <state width="1877" height="238" key="GridCell.Tab.1.bottom" timestamp="1580693038027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="349" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580680043819" />
-    <state width="916" height="349" key="GridCell.Tab.1.center" timestamp="1580680043819">
+    <state width="1877" height="238" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580693038027" />
+    <state width="1877" height="238" key="GridCell.Tab.1.center" timestamp="1580693038027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="349" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580680043819" />
-    <state width="916" height="349" key="GridCell.Tab.1.left" timestamp="1580680043819">
+    <state width="1877" height="238" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580693038027" />
+    <state width="1877" height="238" key="GridCell.Tab.1.left" timestamp="1580693038027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="349" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580680043819" />
-    <state width="916" height="349" key="GridCell.Tab.1.right" timestamp="1580680043819">
+    <state width="1877" height="238" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580693038027" />
+    <state width="1877" height="238" key="GridCell.Tab.1.right" timestamp="1580693038027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="349" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580680043819" />
+    <state width="1877" height="238" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580693038027" />
     <state x="682" y="124" key="RollbackChangesDialog" timestamp="1579709983804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -270,10 +280,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579708218729" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1580680491773">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1580680545397">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580680491773" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580680545397" />
     <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1580548705867">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -294,24 +304,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="148" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580237480549" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1580674703878">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1580690434539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580674703878" />
-    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1580405936989">
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580690434539" />
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1580684777756">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580405936989" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BigNumberTest.java</url>
-          <line>275</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580684777756" />
   </component>
 </project>

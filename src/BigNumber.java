@@ -26,13 +26,18 @@ public class BigNumber {
      * @return devuelve un BigNumber con el resultado de la suma.
      */
     BigNumber add(BigNumber other) {
+
         addZero(other);
+
         int acarreo = 0;
         int numActual;
         StringBuilder resultado = new StringBuilder();
+
         for (int i = this.numeroString.length()-1; i >= 0 ; i--) {
+
             numActual = ((this.numeroString.charAt(i) -48) + (acarreo) + (other.numeroString.charAt(i)-48));
             acarreo = numActual/10;
+
             if (numActual >= 10){
                 numActual = numActual-10;
             }
@@ -51,6 +56,7 @@ public class BigNumber {
 
         if (!this.validBigNumber(other)) return null;
         addZero(other);
+
         int acarreo = 0;
         int numActual;
 
@@ -93,6 +99,7 @@ public class BigNumber {
      */
     BigNumber mult(BigNumber other) {
 
+        /* Si uno de los dos numores por los que se ha de multiplicar es 0 devuelve 0 */
         if ((this.compareTo(new BigNumber("0")) == 0) || (other.compareTo(new BigNumber("0"))) == 0){
             return new BigNumber("0");
         }
@@ -137,7 +144,9 @@ public class BigNumber {
 
         BigNumber result = new BigNumber("");
         BigNumber actual = new BigNumber("");
+
         for (int i = 0; i < this.numeroString.length(); i++) {
+
             actual.numeroString += this.numeroString.charAt(i);
             int contador = 0;
             /* Restamos a actual other hasta que sean iguales o other sea mayor */
@@ -151,7 +160,7 @@ public class BigNumber {
     }
 
     /**
-     *
+     * Esta función es la encargada de
      * @return
      */
     BigNumber sqrt() {
@@ -159,46 +168,40 @@ public class BigNumber {
         BigNumber resto = new BigNumber("");
         BigNumber resultado = new BigNumber("");
 
+        /* Si el numero es impar le añadimos un cero */
         if ((this.numeroString.length()%2) != 0){
             this.numeroString = "0" + this.numeroString;
         }
-        String digitArray [] = new String [this.numeroString.length()/2];
+        String[] digitArray = new String [this.numeroString.length()/2];
 
-        int j = 0;
-        for (int i = 0; i < this.numeroString.length()/2 ; i++) {
+        /* Introducimos los digitos por pares en el array */
+        for (int i = 0, j = 0; i < this.numeroString.length()/2 ; i++, j+=2) {
             String num = "" + (this.numeroString.charAt(j)) + (this.numeroString.charAt(j+1));
             digitArray[i] = num;
-            j+=2;
         }
 
-        for (int i = 0; i <digitArray.length ; i++) {
-            BigNumber contador = new BigNumber("0");
-            BigNumber actual = new BigNumber("0");
+        for (int i = 0; i <digitArray.length; i++) {
 
-             resto.numeroString += digitArray[i];
+            BigNumber actual = new BigNumber("");
+            resto.numeroString += digitArray[i];
 
-            for (int k = 0; k < 10; k++) {
-                contador = contador.add(new BigNumber("1"));
+            for (int j = 0; j <= 9; j++) {
 
-                actual = resultado.mult(new BigNumber("20"));
-                actual = actual.add(contador);
-                actual = actual.mult(contador);
+                StringBuilder sb = new StringBuilder();
+                sb = new StringBuilder(new BigNumber(resultado).mult(new BigNumber("2")).toString());
+                sb = sb.append(j + 1);
+                actual = new BigNumber(sb.toString());
 
-                if (new BigNumber(digitArray[i]).compareTo(actual) == -1){
+                if (actual.mult(new BigNumber(Integer.toString(j+1))).compareTo(resto) == 1  ){
 
-                    contador = contador.sub(new BigNumber("1"));
-
-                    actual = resultado.mult(new BigNumber("20"));
-                    actual = actual.add(contador);
-                    actual = actual.mult(contador);
-
+                    sb = new StringBuilder(new BigNumber(resultado).mult(new BigNumber("2")).toString());
+                    sb = sb.append(j);
+                    actual = new BigNumber(sb.toString());
+                    actual = actual.mult(new BigNumber(Integer.toString(j)));
                     resto = resto.sub(actual);
-                    resultado.numeroString += contador;
+                    resultado.numeroString += Integer.toString(j);
                     break;
 
-                } else if (new BigNumber(digitArray[i]).compareTo(actual) == 0){
-                    resultado.numeroString += contador;
-                    break;
                 }
             }
         }
@@ -245,7 +248,21 @@ public class BigNumber {
      * @return devuelve un BigNumber con el resultado.
      */
     BigNumber mcd(BigNumber other) {
+
         if (!this.validBigNumber(other)) return null;
+
+        BigNumber num = new BigNumber(this.numeroString);
+        while(num.compareTo(other) != 0) {
+            if (this.compareTo(other) == 1) {
+                num = num.sub(other);
+            } else {
+                other = other.sub(num);
+            }
+        }
+        return num;
+
+        /*
+        Intento de optimización junto a la función divMcd.
 
         if (this.compareTo(other) == -1) {
             String temp = other.numeroString;
@@ -258,22 +275,13 @@ public class BigNumber {
             this2 = other;
             other = this2.divMcd(other);
         }
-
-
-
-        /*BigNumber num = new BigNumber(this.numeroString);
-        while(num.compareTo(other) != 0) {
-            if (this.compareTo(other) == 1) {
-                num = num.sub(other);
-            } else {
-                other = other.sub(num);
-            }
-        }
-        return num; */
         return other;
+         */
     }
 
+    /*
     public BigNumber divMcd(BigNumber other){
+
         if (!this.validBigNumber(other)) return null;
 
         BigNumber result = new BigNumber("");
@@ -281,7 +289,9 @@ public class BigNumber {
         for (int i = 0; i < this.numeroString.length(); i++) {
             actual.numeroString += this.numeroString.charAt(i);
             int contador = 0;
-            /* Restamos a actual el divisor */
+
+            Restamos a actual el divisor
+
             while(actual.compareTo(other) != -1){
                 actual = actual.sub(other);
                 contador++;
@@ -290,6 +300,7 @@ public class BigNumber {
         }
         return actual;
     }
+    */
 
     /**
      * Esta función compara dos BigNumber para averiguar cual es el mayor de los dos o si son iguales.
@@ -394,11 +405,5 @@ public class BigNumber {
             if ((other.numeroString.charAt(i) < 48) || (other.numeroString.charAt(i) > 48+9)) return false;
         }
         return true;
-    }
-
-    public static void main(String[] args) {
-        BigNumber b1 = new BigNumber("106");
-        BigNumber b2 = new BigNumber("16");
-        System.out.println(b1.divMcd(b2));
     }
 }
